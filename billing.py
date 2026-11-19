@@ -9,13 +9,13 @@ class CustomerProfile:
 
 # Data Coupling: функція отримує тільки ті дані, які їй потрібні (місто і вагу)
 def calculate_delivery_cost(city: str, weight_kg: float) -> float:
-   if city == "Kyiv":
+    if city == "Kyiv":
         base_rate = 80.0
     elif city == "Ivano-Frankivsk":
         base_rate = 50.0
     else:
         base_rate = 110.0
-    return base_rate + (weight_kg * 12.0)
+    return base_rate + (weight_kg * 15.0)
 
 
 # Звичайний рахунок: ставка податку передається явно, за замовчуванням 20%
